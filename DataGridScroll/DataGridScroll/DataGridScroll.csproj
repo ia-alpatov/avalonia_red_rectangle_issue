@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <Compile Update="Views\*.xaml.cs">
+            <DependentUpon>%(Filename)</DependentUpon>
+        </Compile>
+        <AvaloniaResource Include="Views\*.xaml">
+            <SubType>Designer</SubType>
+        </AvaloniaResource>
+
+        <Compile Update="*.xaml.cs">
+            <DependentUpon>%(Filename)</DependentUpon>
+        </Compile>
+        <AvaloniaResource Include="*.xaml">
+            <SubType>Designer</SubType>
+        </AvaloniaResource>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="0.9.9" />
+        <PackageReference Include="Avalonia.Controls.DataGrid" Version="0.9.9" />
+        <PackageReference Include="Avalonia.Desktop" Version="0.9.9" />
+        <PackageReference Include="Avalonia.ReactiveUI" Version="0.9.9" />
+        <PackageReference Include="Avalonia.Xaml.Behaviors" Version="0.9.9" />
+    </ItemGroup>
+</Project>

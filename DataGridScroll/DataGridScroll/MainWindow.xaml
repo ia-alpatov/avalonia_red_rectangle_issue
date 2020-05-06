@@ -1,0 +1,27 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="DataGridScroll.MainWindow"
+        Title="Test app"
+        d:DesignWidth="1000" d:DesignHeight="1000"
+
+        Width="1000"
+        Height="1000"
+        MinWidth="1000"
+        MinHeight="1000"
+        WindowStartupLocation="CenterScreen">
+
+    <NativeMenu.Menu>
+        <NativeMenu />
+    </NativeMenu.Menu>
+
+  <Grid  x:Name="Main_Grid">
+      <Button x:Name="Open_Button" Height="48" Content="Open"
+              HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+              Background="Transparent" BorderThickness="2" BorderBrush="#BFBFBF" />
+  </Grid>
+  
+
+</Window>
